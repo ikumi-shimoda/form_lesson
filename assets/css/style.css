@@ -302,6 +302,7 @@ body a {
 	cursor: pointer;
 	padding: 13px;
 	margin-bottom: 20px;
+	transition: .3s;
 	width: 100%;
 }
 
