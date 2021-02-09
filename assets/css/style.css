@@ -320,6 +320,10 @@ body a {
 	color: #01a6a4;
 }
 
+.link-form:hover {
+	color: #01bfbd;
+}
+
 .submit-txt {
 	font-size: 12px;
 	line-height: 16px;
@@ -337,4 +341,8 @@ body a {
 
 .bottom-txt:first-child {
 	margin-top: 0;
+}
+
+.bottom-line:hover {
+	border-bottom: 1px solid #01bfbd;
 }

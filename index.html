@@ -22,15 +22,15 @@
         <div class="separate-box">
           <p class="separate-txt">アカウント情報</p>
         </div>
-        <section class=" input-form">
+        <form class="input-form" action="#" method="POST">
           <div class="form-row name-form">
             <div class="last-name">
               <p class="label-txt">名字 <span  class="required">※</span></p>
-              <input type="text" class="input">
+              <input type="text" name="last-name" class="input" required>
             </div>
             <div class="first-name">
               <p class="label-txt">名前 <span class="required">※</span></p>
-              <input type="text" class="input">
+              <input type="text" name="first-name" class="input" required>
             </div>
           </div>
 
@@ -56,29 +56,29 @@
             <p class="label-txt">出身</p>
             <div class="birth-box">
               <select name="birth" id="birth" class="birth-input">
-                <option>東京</option>
-                <option>千葉</option>
-                <option>埼玉</option>
-                <option >神奈川</option>
+                <option name="tokyo">東京</option>
+                <option name="chiba">千葉</option>
+                <option name="saitama">埼玉</option>
+                <option name="kanagawa">神奈川</option>
               </select>
             </div>
           </div>
 
           <div class="form-row  mail-form">
             <p class="label-txt">Eメール <span class="required">※</span></p>
-            <input type="email" class="input" placeholder="ex) hoge@example.com">
+            <input type="email" name="email" class="input" placeholder="ex) hoge@example.com" required>
           </div>
           <div class="form-row telphone-form">
             <p class="label-txt">電話番号</p>
-            <input type="text" class="input" placeholder="ex) 09012345678">
+            <input type="tel" name="tel" class="input" placeholder="ex) 09012345678">
           </div>
           <div class="form-row  password-form">
             <p class="label-txt">パスワード <span class="required">※</span></p>
-            <input type="password" class="input">
+            <input type="password" name="password" class="input" required>
           </div>
           <div class="form-row  password-check-form">
             <p class="label-txt">パスワード(確認用) <span class="required">※</span></p>
-            <input type="password" class="input">
+            <input type="password" name="password-check" class="input" required>
           </div>
 
           <div class="form-row  choice-form">
@@ -99,15 +99,15 @@
 
           <div class="form-row  other">
             <p class="label-txt">備考</p>
-            <textarea name="" class="input other-input" placeholder="何かあればご記入ください" cols="30" rows="3"></textarea>
+            <textarea name="other" class="input other-input" placeholder="何かあればご記入ください" cols="30" rows="3"></textarea>
           </div>
         <input type="submit" class="submit-form" value="アカウント作成">
         <p class="submit-txt">アカウントを作成することにより、<a href="#" class="link-form">利用規約</a>と<a href="#" class="link-form">プライバシーポリシー</a>に同意するものとします。</p>
-        </section>
+        </from>
       </article>
       <div class="bottom-form">
-        <p class="bottom-txt">すでにアカウントをお持ちですか？ <a href="#" class="link-form">ログイン</a></p>
-        <p class="bottom-txt"><a href="#" class="link-form">認証メールが届きませんか？</a></p>
+        <p class="bottom-txt">すでにアカウントをお持ちですか？ <a href="#" class="link-form bottom-line">ログイン</a></p>
+        <p class="bottom-txt"><a href="#" class="link-form bottom-line">認証メールが届きませんか？</a></p>
       </div>
     </div>
   </main>
